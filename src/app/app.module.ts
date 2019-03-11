@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 //rutas
 import { AppRoutingModule } from './app-routing.module';
 //componentes
@@ -23,7 +25,9 @@ import { ItemComponent } from './pages/item/item.component';
     BrowserModule,
     AppRoutingModule,
     /*modulo de rutas */
-    AppRoutingModule
+    AppRoutingModule,
+    /*para poder realizar pedidos a servidores */
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
